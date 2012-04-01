@@ -24,8 +24,9 @@ class Hackme < Sinatra::Base
   use Rack::Session::Pool, :expire_after => 2592000
   set :session_secret, "Th1S 1S a Gr34T s3Cr3tS P4sSphr4s3"
 
-
-
+  get '/private' do
+    haml :private
+  end
 
   get '/' do
     haml :index
