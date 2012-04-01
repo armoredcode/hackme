@@ -1,0 +1,6 @@
+coverage
+.bundle
+pkg
+.rvmrc
+*.swp
+*.gemspec
